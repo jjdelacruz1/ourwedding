@@ -7,7 +7,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #F14E95 !default;
+$brand-primary: -webkit-linear-gradient(left, #dc2424, #4a569d ) !default;
 $brand-secondary: #118DF0 !default; 
 
 $brand-white: #fff;
@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover {
 	height: 900px;
 	background-size: cover;
-	// background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
@@ -502,6 +502,12 @@ h1, h2, h3, h4, h5, h6, figure {
 			width: 50%;
 			float: left;
 			margin-bottom: 30px;
+			.event-desc {
+				@include media-breakpoint-up ($screen-lg) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
 		}
 	}
 
@@ -727,13 +733,11 @@ h1, h2, h3, h4, h5, h6, figure {
 				@include transition(.5s);
 				@include border-radius(7px);
 
-				background: rgba(0, 0, 0, .2);	
+				// background: rgba(0, 0, 0, .2);	
 
 			}
 			&:hover {
-				&:before {
-					background: rgba(0, 0, 0, .5);
-				}
+				transform: scale(2);
 			}
 			
 			.case-studies-summary {
@@ -1571,10 +1575,13 @@ form {
   		&::before, &::after {
   			background: $brand-white;
   		}
+
   	}
   }
 }
-
+#wedding-party {
+	
+}
 .fh5co-nav-toggle i::before {
   top: -7px;
 }
@@ -1803,8 +1810,6 @@ form {
 	background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-.animate-box {
-	.js & {
-		opacity: 0;
-	}
+.animate-box:hover {
+	transform: scale(3);	
 }
