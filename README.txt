@@ -1,5 +1,5 @@
 #Wedding Website!
-- Please check us out at [jeromeandauggie.com](https://www.jeromeandauggie.com)!
+- Please check us out at (https://www.jeromeandauggie.com)!
 - This was our wedding website for our guests to visit and learn more about us. Since we were on such a short timeline, I decided to make it a single page site with links to our registries and RSVP. Ideally these would have been forms and embeds, but again due to time constraints, the decision was made to keep it simple.
 - Originally there was a countdown timer, but with the wedding already passed, I decided to link our wedding video as well as pictures that family and friends shared with us on our day!
 
